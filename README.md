@@ -12,6 +12,10 @@ npm run preview    # serve the production build
 npm test           # Vitest: locale resolution and translation key parity
 ```
 
+## Deploy
+
+Every push to `main` runs `.github/workflows/deploy.yml`: install, test, build, and publish `dist/` to GitHub Pages (repo Settings → Pages → Source: GitHub Actions). It can also be run by hand from the Actions tab.
+
 ## Layout
 
 - `src/engine/`: canvas engine, shared types (`Place`, `Ritual`, `Weather`, `Presence`) and the audio mixer.
