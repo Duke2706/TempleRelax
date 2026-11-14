@@ -24,6 +24,7 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 - [Which i18n library and message format?](issues/01-i18n-format.md): i18next + react-i18next, one JSON file per locale; native arrays for release notes, reusable server-side.
 - [Keep MP3 or re-encode the ambient loops?](issues/02-audio-format.md): keep MP3 as separate files (no base64), add a silence-trimming loop guard; Opus deferred.
 - [Split CSS and JS out of index.html (vanilla)](issues/03-vanilla-split-css-js.md): done; styles.css + app.js, byte-identical reassembly, verified in browser.
+- [Extract embedded audio to assets (vanilla)](issues/04-vanilla-extract-audio.md): done; MP3s in assets/audio, fetched lazily; needs a local server (no sound on file://).
 
 ## Not yet specified
 
