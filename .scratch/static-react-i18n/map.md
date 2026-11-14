@@ -4,6 +4,8 @@ Label: wayfinder:map
 
 ## Destination
 
+**Reached 2026-11-14.** Remaining items below are follow-ups, not blockers.
+
 Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio assets), ported to a static Vite + React + TypeScript site where adding a new Place is cheap, all copy lives in i18n files (ko, es, en) with a language selector and browser-language detection (default en), deployed to GitHub Pages.
 
 ## Notes
@@ -28,6 +30,8 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 - [What does a Place definition contain?](issues/06-place-contract.md): Place, Ritual and Weather as strategy objects in registries; Place owns ambient sounds and copy, Weather owns its own; shared Layout; Presence as no-op adapter; per-Place CSS tokens.
 - [Port to Vite + React + TS](issues/07-react-port.md): done; engine/Places/Rituals/Weathers per the contract, React UI chrome, Korean copy centralised in src/copy/ko.ts; parity checked in the browser.
 - [Extract copy to i18n files and add the language selector](issues/08-i18n-and-language-selector.md): done; ko/es/en JSON, own locale resolver with tests, endonym selector, html lang/title synced.
+- [Make the repo public and enable GitHub Pages](issues/05-make-repo-public-enable-pages.md): done by the owner; site at https://duke2706.github.io/TempleRelax/.
+- [Deploy to GitHub Pages with Actions](issues/09-pages-deploy.md): done; deploy on push to main (test + build + Pages), first run green, live site checked.
 
 ## Not yet specified
 

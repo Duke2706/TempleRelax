@@ -1,7 +1,7 @@
 # Make the repo public and enable GitHub Pages
 
 Type: task
-Status: open
+Status: resolved
 Blocked by:
 
 ## Question
@@ -14,3 +14,7 @@ Record the resulting Pages URL in the answer.
 ## Comments
 
 - 2026-11-14: Repo is public (API returns 200). Pages is not enabled yet (`/pages` returns 404): step 2 (Source: GitHub Actions) still pending; it can also be done right before "Deploy to GitHub Pages with Actions".
+
+## Answer
+
+Done by the owner: repo public, Pages source set to GitHub Actions. Pages URL: https://duke2706.github.io/TempleRelax/
