@@ -27,10 +27,11 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 - [Extract embedded audio to assets (vanilla)](issues/04-vanilla-extract-audio.md): done; MP3s in assets/audio, fetched lazily; needs a local server (no sound on file://).
 - [What does a Place definition contain?](issues/06-place-contract.md): Place, Ritual and Weather as strategy objects in registries; Place owns ambient sounds and copy, Weather owns its own; shared Layout; Presence as no-op adapter; per-Place CSS tokens.
 - [Port to Vite + React + TS](issues/07-react-port.md): done; engine/Places/Rituals/Weathers per the contract, React UI chrome, Korean copy centralised in src/copy/ko.ts; parity checked in the browser.
+- [Extract copy to i18n files and add the language selector](issues/08-i18n-and-language-selector.md): done; ko/es/en JSON, own locale resolver with tests, endonym selector, html lang/title synced.
 
 ## Not yet specified
 
-- Who reviews the Spanish/English copy so it keeps the calm, gentle tone of the Korean original (machine draft vs human pass).
+- Who reviews the Spanish/English copy so it keeps the calm, gentle tone of the Korean original: drafts are in `src/locales/`, plus three new Korean lines added in the port (generic Weather notes, beach scene and input labels).
 - Fonts for Latin scripts: Gowun Batang/Dodum cover Latin, but whether they read well for es/en is unchecked.
 - Whether the React stack choice deserves an ADR once the port lands.
 

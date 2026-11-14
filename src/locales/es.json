@@ -1,0 +1,67 @@
+{
+  "title": "Una línea para soltar",
+  "placeGroupLabel": "Lugar",
+  "weatherGroupLabel": "Clima",
+  "languageGroupLabel": "Idioma",
+  "weather": {
+    "clear": "Despejado",
+    "rain": "Lluvia",
+    "snow": "Nieve"
+  },
+  "weatherNotes": {
+    "rain": "Se oye la lluvia.",
+    "snow": "La nieve cae en silencio."
+  },
+  "sound": {
+    "on": "Activar sonido",
+    "off": "Silenciar"
+  },
+  "placeholder": "Ej.: no dejo de pensar en lo que me dijeron",
+  "share": "Mostrar también mi texto como luz de estrella a quienes están aquí ahora (desactivado: solo la luz, sin texto)",
+  "places": {
+    "forest": {
+      "name": "Fogata",
+      "sceneLabel": "Una fogata ardiendo en un bosque de noche",
+      "hint": [
+        "Escribe en una línea lo que te pesa y échalo al fuego.",
+        "Mientras crepita, puedes quedarte un rato mirando sin más."
+      ],
+      "action": "Quemar",
+      "inputLabel": "Un pensamiento para quemar",
+      "keep": "Lo que escribas no se guarda en ningún sitio; desaparece al quemarse.",
+      "counter_one": "{{count}} pensamiento quemado",
+      "counter_other": "{{count}} pensamientos quemados",
+      "closingLines": [
+        "Se consumió. Ya pesa menos.",
+        "Sube al cielo nocturno hecho ceniza.",
+        "Ahora solo mira el fuego.",
+        "Todo está un poco más en calma.",
+        "Bien hecho. Respira despacio."
+      ],
+      "weatherNotes": {
+        "rain": "Aunque llueva, el fuego no se apaga.",
+        "snow": "Una noche de nieve. La luz del fuego parece aún más cálida."
+      }
+    },
+    "beach": {
+      "name": "Playa",
+      "sceneLabel": "El mar de noche bajo la luz de la luna",
+      "hint": [
+        "Escribe en una línea lo que te pesa y envíalo en una botella.",
+        "Escucha las olas y mira cómo la botella se aleja."
+      ],
+      "action": "Soltar al mar",
+      "inputLabel": "Un pensamiento para soltar al mar",
+      "keep": "Lo que escribas no se guarda en ningún sitio; desaparece cuando la botella se aleja.",
+      "counter_one": "{{count}} pensamiento a la deriva",
+      "counter_other": "{{count}} pensamientos a la deriva",
+      "closingLines": [
+        "La botella se aleja sobre las olas.",
+        "Se fue más allá del horizonte.",
+        "El mar se lo llevó.",
+        "Todo está un poco más en calma.",
+        "Bien enviado. Respira despacio."
+      ]
+    }
+  }
+}

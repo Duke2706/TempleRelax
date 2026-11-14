@@ -1,0 +1,67 @@
+{
+  "title": "One Line to Let Go",
+  "placeGroupLabel": "Place",
+  "weatherGroupLabel": "Weather",
+  "languageGroupLabel": "Language",
+  "weather": {
+    "clear": "Clear",
+    "rain": "Rain",
+    "snow": "Snow"
+  },
+  "weatherNotes": {
+    "rain": "You can hear the rain.",
+    "snow": "Snow is falling quietly."
+  },
+  "sound": {
+    "on": "Sound on",
+    "off": "Sound off"
+  },
+  "placeholder": "e.g. I keep replaying what they said",
+  "share": "Also show my words as starlight to whoever is here right now (off: starlight only, no words)",
+  "places": {
+    "forest": {
+      "name": "Campfire",
+      "sceneLabel": "A campfire burning in a forest at night",
+      "hint": [
+        "Write one line about what weighs on you and toss it into the fire.",
+        "While it crackles away, it's fine to just stare for a while."
+      ],
+      "action": "Burn",
+      "inputLabel": "A thought to burn",
+      "keep": "Nothing you write is saved anywhere; it's gone once it burns.",
+      "counter_one": "{{count}} thought burned",
+      "counter_other": "{{count}} thoughts burned",
+      "closingLines": [
+        "It burned away. You feel lighter.",
+        "It rises into the night sky as ash.",
+        "Now just watch the fire.",
+        "Everything feels a little quieter.",
+        "Well done. Breathe slowly."
+      ],
+      "weatherNotes": {
+        "rain": "Even in the rain, the fire won't go out.",
+        "snow": "A snowy night. The firelight looks even warmer."
+      }
+    },
+    "beach": {
+      "name": "Seaside",
+      "sceneLabel": "The night sea under the moonlight",
+      "hint": [
+        "Write one line about what weighs on you and send it off in a glass bottle.",
+        "Listen to the waves and watch the bottle drift away."
+      ],
+      "action": "Set adrift",
+      "inputLabel": "A thought to set adrift",
+      "keep": "Nothing you write is saved anywhere; it's gone once the bottle drifts away.",
+      "counter_one": "{{count}} thought set adrift",
+      "counter_other": "{{count}} thoughts set adrift",
+      "closingLines": [
+        "The bottle rides the waves away.",
+        "It drifted past the horizon.",
+        "The sea has taken it.",
+        "Everything feels a little quieter.",
+        "Well sent. Breathe slowly."
+      ]
+    }
+  }
+}
