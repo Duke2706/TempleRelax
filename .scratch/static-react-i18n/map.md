@@ -9,7 +9,7 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 ## Notes
 
 - **Execution is in scope**: unlike a planning-only map, this effort carries execution. `task` tickets are executed by an agent, one per session.
-- Domain language: see `GLOSSARY.md` (Thought, Place, Ritual, Weather). Use those terms in code and copy.
+- Domain language: see `GLOSSARY.md` (Thought, Place, Ritual, Weather, Closing line, Presence). Use those terms in code and copy.
 - Generated artifacts (code, comments, keys, docs) in English. Korean is the current source copy.
 - Stack: Vite + React + TypeScript, static build. React owns the UI chrome only; canvas drawing and Web Audio stay imperative TS modules mounted from a component.
 - Steps 1–2 are first done in vanilla as a working reference before the React port.
@@ -25,12 +25,12 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 - [Keep MP3 or re-encode the ambient loops?](issues/02-audio-format.md): keep MP3 as separate files (no base64), add a silence-trimming loop guard; Opus deferred.
 - [Split CSS and JS out of index.html (vanilla)](issues/03-vanilla-split-css-js.md): done; styles.css + app.js, byte-identical reassembly, verified in browser.
 - [Extract embedded audio to assets (vanilla)](issues/04-vanilla-extract-audio.md): done; MP3s in assets/audio, fetched lazily; needs a local server (no sound on file://).
+- [What does a Place definition contain?](issues/06-place-contract.md): Place, Ritual and Weather as strategy objects in registries; Place owns ambient sounds and copy, Weather owns its own; shared Layout; Presence as no-op adapter; per-Place CSS tokens.
 
 ## Not yet specified
 
 - Who reviews the Spanish/English copy so it keeps the calm, gentle tone of the Korean original (machine draft vs human pass).
 - Fonts for Latin scripts: Gowun Batang/Dodum cover Latin, but whether they read well for es/en is unchecked.
-- How the shared-stars code (`window.claude.use('room')`) survives the React port: dropped, or kept behind an optional adapter for the later dynamic phase.
 - Whether the React stack choice deserves an ADR once the port lands.
 
 ## Out of scope

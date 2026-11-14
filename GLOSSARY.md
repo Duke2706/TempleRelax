@@ -10,3 +10,9 @@ _Avoid_: background, fondo, scene
 _Avoid_: animation
 
 **Weather**: The sky condition layered over any Place: clear, rain, or snow. Independent of the Place; rain has its own sound, snow is silent.
+
+**Closing line**: The short consoling sentence shown when a Ritual ends (e.g. "the sea took it"). Each Place has its own set.
+_Avoid_: note, release note
+
+**Presence**: The other visitors who have the page open at the same moment. Their released Thoughts may appear as passing stars; nothing is stored.
+_Avoid_: room, peers
