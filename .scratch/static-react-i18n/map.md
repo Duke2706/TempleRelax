@@ -26,6 +26,7 @@ Steps 1–4 done and working: the single-file mockup is split (CSS, JS, audio as
 - [Split CSS and JS out of index.html (vanilla)](issues/03-vanilla-split-css-js.md): done; styles.css + app.js, byte-identical reassembly, verified in browser.
 - [Extract embedded audio to assets (vanilla)](issues/04-vanilla-extract-audio.md): done; MP3s in assets/audio, fetched lazily; needs a local server (no sound on file://).
 - [What does a Place definition contain?](issues/06-place-contract.md): Place, Ritual and Weather as strategy objects in registries; Place owns ambient sounds and copy, Weather owns its own; shared Layout; Presence as no-op adapter; per-Place CSS tokens.
+- [Port to Vite + React + TS](issues/07-react-port.md): done; engine/Places/Rituals/Weathers per the contract, React UI chrome, Korean copy centralised in src/copy/ko.ts; parity checked in the browser.
 
 ## Not yet specified
 
