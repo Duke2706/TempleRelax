@@ -1,0 +1,50 @@
+  /* Layout idea: full-screen night forest canvas, quiet title on top, one input line at the bottom. */
+  :root {
+    --night: #080b11;
+    --ink: #f1e6d3;
+    --ash: #9a8f80;
+    --ember: #ff8a3d;
+    --panel: rgba(14, 12, 10, 0.55);
+    --display: 'Gowun Batang', 'Noto Serif KR', 'Batang', serif;
+    --body: 'Gowun Dodum', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; background: var(--night); color: var(--ink); font-family: var(--body); overflow: hidden; }
+  #scene { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+  .vignette { position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 62%, transparent 40%, rgba(0,0,0,0.55) 100%); }
+
+  header { position: fixed; top: 0; left: 0; right: 0; padding: 28px 20px 0; text-align: center; pointer-events: none; }
+  h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(22px, 4vw, 30px); letter-spacing: 0.32em; text-indent: 0.32em; color: var(--ink); text-wrap: balance; }
+  .hint { margin: 10px 0 0; font-size: 15px; color: var(--ash); line-height: 1.6; text-wrap: balance; }
+  .note { margin: 8px 0 0; min-height: 1.6em; font-size: 15px; color: var(--ember); opacity: 0; transition: opacity 1.2s ease; }
+  .note.show { opacity: 1; }
+
+  .sound { position: fixed; top: 18px; right: 16px; font: inherit; font-size: 14px; color: var(--ash); background: var(--panel); border: 1px solid rgba(241,230,211,0.18); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+  .sound[aria-pressed="true"] { color: var(--ember); border-color: rgba(255,138,61,0.5); }
+  .sound:hover { color: var(--ink); }
+
+  .panel { position: fixed; left: 0; right: 0; bottom: 0; padding: 16px 16px calc(20px + env(safe-area-inset-bottom)); display: flex; justify-content: center; }
+  .row { width: min(560px, 100%); display: flex; align-items: flex-end; gap: 12px; background: var(--panel); border: 1px solid rgba(241,230,211,0.12); border-radius: 14px; padding: 12px 14px; backdrop-filter: blur(6px); }
+  .row input { flex: 1; min-width: 0; font: inherit; font-size: 17px; color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid rgba(241,230,211,0.28); padding: 8px 2px; outline: none; }
+  .row input::placeholder { color: rgba(154,143,128,0.8); }
+  .row input:focus { border-bottom-color: var(--ember); }
+  .row button { font: inherit; font-size: 16px; color: #1a0e06; background: var(--ember); border: 0; border-radius: 10px; padding: 10px 18px; cursor: pointer; white-space: nowrap; }
+  .row button:hover { background: #ffa05e; }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+  .count { position: fixed; left: 16px; bottom: calc(92px + env(safe-area-inset-bottom)); font-size: 13px; color: var(--ash); pointer-events: none; }
+  @media (max-width: 480px) { .count { display: none; } }
+  .panel { flex-direction: column; align-items: center; gap: 10px; }
+  .share { width: min(560px, 100%); display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ash); padding: 0 4px; cursor: pointer; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+  .share input { accent-color: var(--ember); width: 16px; height: 16px; margin: 0; }
+  .count { bottom: calc(150px + env(safe-area-inset-bottom)); }
+  .keep { margin: 0; width: min(560px, 100%); text-align: center; font-size: 13px; color: var(--ash); text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+  .wx { position: fixed; top: 18px; left: 16px; display: flex; gap: 4px; background: var(--panel); border: 1px solid rgba(241,230,211,0.18); border-radius: 999px; padding: 3px; }
+  .wx button { font: inherit; font-size: 14px; color: var(--ash); background: transparent; border: 0; border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .wx button:hover { color: var(--ink); }
+  .wx button[aria-pressed="true"] { color: #1a0e06; background: var(--ember); }
+  .pl { position: fixed; top: 62px; left: 16px; display: flex; gap: 4px; background: var(--panel); border: 1px solid rgba(241,230,211,0.18); border-radius: 999px; padding: 3px; }
+  .pl button { font: inherit; font-size: 14px; color: var(--ash); background: transparent; border: 0; border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .pl button:hover { color: var(--ink); }
+  .pl button[aria-pressed="true"] { color: var(--ink); background: rgba(241,230,211,0.16); }
+  @media (max-width: 560px) { header { padding-top: 110px; } }
